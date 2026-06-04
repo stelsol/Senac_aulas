@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto web</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="imagens/image.png">
+</head>
+
+<body class="bg-violet-50">
+    
+    <div class="w-full mx-auto container bg-olive-5 0 ">
+        <!-- inicio cabeçalho -->
+        <!-- w-full - pega a largura das dose   colunas, ela é full dentro do disponivel onde ela estiver
+            w-3/12 pega as tres colunas de antes meio que aloca nos espaços 
+            rounded-xl - arredondar borda
+            bg- troca a cor do background
+            shadow-[0_50px_20px_rgba(0,0,0,0.25)] - para sombras em baixo
+            z-999 - para sobrepor camadas
+            md:flex-row -  deixa o site responsivo quando a tela ficar menor md- telas médias-->
+        <div class="w-full p-4 flex items-center justify-center ">
+                <div class="w-3/12 pl-20">
+                    <img src="imagens/logotipo.webp" alt="Logotipo" class="w-40">
+
+                </div>
+            <div class="w-9/12">
+
+                <div class="w-full h-full flex  justify-around items-center gap-3 pr-10 ">
+
+                    <div><a href="#" class="p-7 hover:bg-olive-50/50 hover:border-b-2 transition duration[2s]">Home</a></div>
+                    <div><a href="QuemSomos.html" class="p-7 hover:bg-olive-50/50 hover:border-b-2 transition duration[2s]">Quem Somos</a></div>
+                    <div><a href="FaleConosco.html" class="p-7 hover:bg-olive-50/50 hover:border-b-2 transition duration[2s]">Fale Conosco</a></div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- Fim cabeçalho -->
+
+        <!-- inicio banner -->
+        <div
+            class="w-full h-96 bg-[url(imagens/fundov2.png)] bg-cover bg-center flex flex-col justify-center items-center">
+
+            <h1 class="text-6xl font-bold pt-10 text-shadow-lg text-white ">Collection 2026</h1>
+            <h4 class="text-lg text-white py-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quae!</h4>
+            <button class="p-3 bg-olive-50 hover:bg-olive-200 hover:cursor-pointer rounded-2xl transition duration[2s] ">Veja mais</button>
+
+        </div>
+        <!-- fim banner -->
+
+        <div class="w-full flex flex-col  gap-4 p-10 items-center justify-center  md:flex-row text-justify">
+            <!-- caixa-1 -->
+            <div class="w-full flex flex-col items-center shadow-[0_0_8px_rgba(0,0,0,0.25)]  rounded-xl  p-4">
+                <img src="imagens/bolsa1.png" alt="bolsa1">
+                <h2 class="text-2xl text-center gap-2 font-bold pt-4">Bolsa 1</h2>
+                <p class="p-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ducimus?</p>
+            </div>
+            <!-- caixa-2 -->
+            <div class="w-full flex flex-col items-center shadow-[0_0_8px_rgba(0,0,0,0.25)]  rounded-xl  p-4 ">
+                <img src="imagens/bolsa2.png" alt="bolsa1">
+                <h2 class="text-2xl text-center gap-2 font-bold pt-4">Bolsa 2</h2>
+                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ducimus?</p>
+            </div>
+            <!-- caixa-3 -->
+            <div class="w-full flex flex-col items-center shadow-[0_0_8px_rgba(0,0,0,0.25)]  rounded-xl  p-4">
+                <img src="imagens/bolsa3.png" alt="bolsa1">
+                <h2 class="text-2xl text-center gap-2 font-bold pt-4">Bolsa 3</h2>
+                <p class="p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ducimus?</p>
+            </div>
+
+
+        </div>
+        <div class="w-full p-4 flex items-center justify-center  bg-black text-white">
+                <div class="w-3/12 pl-20">
+                    <img src="imagens/logotipoV2.png" alt="Logotipo" class="w-40">
+
+                </div>
+            <div class="w-6/12">
+
+                <div class="w-full h-full flex  justify-around items-center gap-3 pr-10  bg-black ">
+
+                    <div><a href="#" class="p-7 hover:bg-violet-50/50 transition duration[2s]">Home</a>
+                    </div>
+                    <div><a href="#" class="p-7 hover:bg-violet-50/50 transition duration[2s]">Quem Somos</a></div>
+                    <div><a href="#" class="p-7 hover:bg-violet-50/50  transition duration[2s]">Fale Conosco</a></div>
+
+                </div>
+            </div>
+            <div class="w-3/12 flex flex-col justify-center items-center gap-3 ">
+                <h4>Redes Sociais</h4>
+                <div class="flex  gap-10">
+                    <div class="social"><a href="#"><i class="bi bi-instagram icone text-violet-50 hover:text-white text-3xl"></i></a></div>
+                    <div class="social"><a href="#"><i class="bi bi-facebook icone text-violet-50 text-3xl hover:text-white"></i></a></div>
+                    <div class="social"><a href="#"><i class="bi bi-twitter icone text-violet-50 text-3xl hover:text-white"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
